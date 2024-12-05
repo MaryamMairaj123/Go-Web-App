@@ -2,54 +2,90 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('https://cipe.org.in/wp-content/uploads/2020/12/DevOps-02.jpg'); /* Replace with your own image URL */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            line-height: 1.6;
+            color: #fff;
         }
 
         header {
-            background-color: #333;
+            background-color: rgba(0, 0, 0, 0.8);
             color: #fff;
-            padding: 10px 0;
+            padding: 15px 0;
             text-align: center;
+            backdrop-filter: blur(5px);
         }
 
         nav ul {
             list-style-type: none;
             padding: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
         }
 
         nav ul li a {
             color: #fff;
             text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #4CAF50;
         }
 
         main {
-            padding: 20px;
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+            border-radius: 15px;
         }
 
         section {
-            margin-bottom: 20px;
+            margin-bottom: 40px;
         }
 
         footer {
-            background-color: #333;
+            background-color: rgba(0, 0, 0, 0.8);
             color: #fff;
             text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
+            padding: 20px;
+            position: relative;
             width: 100%;
+            bottom: 0;
+            backdrop-filter: blur(5px);
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        h1, h2, p {
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
         }
     </style>    
 </head>
@@ -67,25 +103,40 @@
 
     <main>
         <section>
-            <h1>Learn DevOps from Basics</h1>
-            <p>The main purpose of this website is to guide people on how to learn DevOps 
-                from basics for Free. We will provide you with the best resources to learn.
-            </p>
+            <h1>Welcome to My DevOps Learning Platform</h1>
+            <p>Hello Everyone! My name is Maryam Mairaj, and I’m here to guide you on a complete journey from DevOps beginner to expert. The goal of this website is to provide you with structured, hands-on, and free learning paths to master the core principles of DevOps, automation, and cloud technologies.</p>
         </section>
 
         <section>
-            <h2>Overview</h2>
-            <p> Zero to Hero courses on all DevOps tools and popular Cloud(AWS and Azure) platform</p>
+            <h2>DevOps Path: From Scratch to Advanced</h2>
+            <p>Here, we cover a comprehensive DevOps journey that takes you from zero to hero. Whether you are starting fresh or looking to deepen your skills, our content focuses on:</p>
+            <ul>
+                <li><strong>Introduction to Linux and Shell Scripting:</strong> Basics of operating systems and command-line operations that are fundamental to DevOps.</li>
+                <li><strong>Version Control with Git:</strong> Learn Git and GitHub for version control and collaboration, a must-have skill for every DevOps engineer.</li>
+                <li><strong>Continuous Integration/Continuous Deployment (CI/CD):</strong> Set up CI/CD pipelines using Jenkins, GitHub Actions, and AWS CodePipeline to automate deployments.</li>
+                <li><strong>Containerization with Docker:</strong> Understand the fundamentals of containers, build images, and run containerized applications.</li>
+                <li><strong>Orchestration with Kubernetes:</strong> Dive into Kubernetes to manage your containerized applications, deploying clusters on AWS and Azure.</li>
+                <li><strong>Cloud Platforms:</strong> Learn to deploy and manage applications using AWS and Azure cloud platforms.</li>
+                <li><strong>Infrastructure as Code (IaC):</strong> Use Terraform and AWS CloudFormation to automate infrastructure provisioning.</li>
+                <li><strong>Monitoring and Logging:</strong> Implement monitoring with tools like Prometheus and Grafana, and log aggregation with ELK stack.</li>
+            </ul>
+            <p>By following this roadmap, you’ll be able to master each essential aspect of DevOps step by step. You’ll learn to manage infrastructure, automate deployments, and create scalable cloud architectures.</p>
         </section>
 
         <section>
-            <h2>Courses Offered</h2>
-            <p>Please look at the <a href="courses">courses</a> section.</p>  
+            <h2>Join Our Free Courses</h2>
+            <p>Looking to gain hands-on experience? We offer free courses that cover all the topics mentioned above. Whether you're a beginner or advancing your career, these courses will give you the knowledge and confidence to build real-world DevOps projects.</p>
+            <p>Check out the <a href="courses">courses</a> section for more details.</p>
+        </section>
+
+        <section>
+            <h2>Connect with Me</h2>
+            <p>If you're eager to start your journey into the world of DevOps, don't hesitate to reach out! I am passionate about helping others grow and succeed in this field. Let’s build, automate, and scale together!</p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; Abhishek.Veeramalla</p>
+        <p>&copy; 2024 Maryam Mairaj | <a href="mailto:maryammairaj53@gmail.com">Contact Me</a></p>
     </footer>
 </body>
 </html>
