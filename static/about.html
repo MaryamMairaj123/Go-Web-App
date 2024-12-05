@@ -1,90 +1,160 @@
-<Docktype html>
-<html>
-    <head>
-        <title>About</title>
-        <style>
-            body {
-                margin: 0;
-                padding: 0;
-            }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <style>
+        /* Global reset and modern fonts */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-            header {
-                background-color: #333;
-                color: #fff;
-                padding: 10px 0;
-                text-align: center;
-            }
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            background: url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?fit=crop&w=1600&q=80') no-repeat center center/cover;
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
 
+        /* Header and Navigation */
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #4CAF50;
+        }
+
+        /* Main content styles */
+        main {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        section h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+
+        section p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #4CAF50;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
             nav ul {
-                list-style-type: none;
-                padding: 0;
-            }
-
-            nav ul li {
-                display: inline;
-                margin-right: 10px;
-            }
-
-            nav ul li a {
-                color: #fff;
-                text-decoration: none;
+                flex-direction: column;
+                gap: 10px;
             }
 
             main {
-                padding: 20px;
+                padding: 40px 20px;
             }
 
-            section {
-                margin-bottom: 20px;
+            section h1 {
+                font-size: 2em;
             }
+        }
+    </style>
+</head>
+<body>
 
-            footer {
-                background-color: #333;
-                color: #fff;
-                text-align: center;
-                padding: 10px 0;
-                position: fixed;
-                bottom: 0;
-                width: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="home">Home</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="contact">Contact</a></li>
-                    <li><a href="courses">Courses</a></li>
-                </ul>
-            </nav>
-        </header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home">Home</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="contact">Contact</a></li>
+                <li><a href="courses">Courses</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <main>
-            <section>
-                <h1>About the Author</h1>
-                <p>Hi Everyone, My name is Abhishek and welcome to my channel :)</p>
+    <main>
+        <section>
+            <h1>About the Author</h1>
+            <p>Hello Everyone, My name is Maryam Mairaj :)</p>
 
-                    <p>    I am an opensource enthusiast and a great believer in sharing knowledge. </p>
-                        <p>  I have my footprints in popular opensource projects like Argo CD, Argo CD Operator, Argo Rollouts Manager, GitOps Operator, F5 Ingress Controller, Nginx Ingress Controller by Nginx and others. </p>
-                    
-                            <p> Apart from working with Red Hat as a GitOps product lead, I also hold below positions in OpenSource communities</p>
-                                <p>  - Maintainer of Argo CD Operator</p>
-                                    <p> - Creator of Argo Rollouts Manager</p>
-                                        <p> - Maintainer of RedHat Developer (GitOps operator)</p>
-                                            <p> - Member of Argo Project</p>
-                                                <p> - Member of Argo SIG Security</p>
-                    
-                                                    <p> If you want to learn complete devops for free with practical projects, checkout the playlist</p>
-                                                        <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa"> Playlists</a></p>
-                    
-                                                            <p> Please subscribe to the channel to keep learning and growing together. Thanks :)</p>
-            </section>
-        </main>
+            <p>As a Cloud and DevOps Enthusiast, I am passionate about streamlining software delivery processes and optimizing cloud-based infrastructure. My expertise lies in implementing automation, continuous integration/continuous deployment (CI/CD), and containerization technologies to drive efficiency, scalability, and reliability. 🚀</p>
 
-        <footer>
-            <p>&copy; Abhishek.Veeramalla</p>
-        </footer>
-    </body>
+            <p>My mission? To architect robust cloud systems while empowering the next generation of cloud experts through hands-on learning and mentorship. From Kubernetes clusters to CI/CD pipelines, I am dedicated to fostering growth, innovation, and a love for all things cloud.</p>
+
+            <p>With a deep understanding of cloud platforms like AWS and Azure, I focus on building robust pipelines and managing microservices architectures with tools like Docker and Kubernetes. I am committed to fostering a culture of collaboration between development and operations teams. 🎯</p>
+
+            <p>If you want to learn complete DevOps for free with practical projects, check out the playlist:</p>
+            <p><a href="https://www.youtube.com/playlist?list=PLdpzxOOAlwvIKMhk8WhzN1pYoJ1YU8Csa">Playlists of DevOps Channel</a></p>
+
+            <p>Keep learning and growing together. Thanks :)</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Maryam Mairaj | <a href="contact">Contact Me</a></p>
+    </footer>
+
+</body>
 </html>
