@@ -1,0 +1,43 @@
+# apiVersion: networking.k8s.io/v1
+# kind: Ingress
+# metadata:
+#   name: go-web-app
+#   annotation: 
+#    nginx.ingress.kubernetes.io/rewrite-target: /
+# spec:
+# # Ingress controller will watch the ingress resource and create lb.
+#   ingressClassName: nginx
+#   rules:
+#   - host: go-web-app.local
+#     http:
+#       paths:
+#       - path: / 
+#         pathType: Prefix
+#         backend:
+#           service:
+#             name: go-web-app
+#             port:
+#               number: 80
+# Ingress resource for the application
+# Ingress resource for the application
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: go-web-app
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+spec:
+  rules:
+  - host: go-web-app.local
+    http:
+      paths: 
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: go-web-app
+            port:
+              number: 80
+
+
+
