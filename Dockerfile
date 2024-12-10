@@ -1,4 +1,4 @@
-FROM golang:1.22.5 as base
+FROM golang:1.23 as base
 
 # all the commands will be executed in the WORKDIR
 WORKDIR /app
